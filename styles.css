@@ -1,0 +1,297 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+/* HEADER / HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  position: relative;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  color: #764ba2;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #eee;
+  color: #5a3e94;
+}
+.mode-toggle {
+  margin-left: 10px;
+  background: #5a3e94;
+  color: white;
+}
+.mode-toggle:hover {
+  background: #764ba2;
+}
+
+/* ABOUT */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.about h2, .projects h2, .testimonials h2, .contact h2 {
+  color: #764ba2;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px 0 25px;
+}
+.skill {
+  background: #764ba2;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.skill i {
+  font-size: 18px;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 40px 20px;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #333;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.card h3 {
+  margin: 10px 0 5px;
+  color: #764ba2;
+}
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #764ba2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s, transform 0.2s;
+}
+.project-link:hover {
+  background: #5a3e94;
+  transform: scale(1.05);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background: #764ba2;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.testimonial {
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* CONTACT */
+.contact {
+  max-width: 600px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: none;
+  border-color: #764ba2;
+}
+#contactForm button {
+  max-width: 200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.socials {
+  margin-top: 25px;
+}
+.socials a {
+  color: #764ba2;
+  margin: 0 12px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+.socials a:hover {
+  color: #5a3e94;
+}
+.resume-btn {
+  margin-top: 25px;
+  background: #5a3e94;
+  color: white;
+}
+.resume-btn:hover {
+  background: #3f2b6a;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RICKROLL BUTTON */
+.rickroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #764ba2;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s;
+}
+.rickroll:hover {
+  background: #5a3e94;
+}
+
+/* DARK MODE STYLES */
+body.dark-mode .card {
+  background: #222;
+  color: #eee;
+  box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+body.dark-mode .projects h2,
+body.dark-mode .about h2,
+body.dark-mode .testimonials h2,
+body.dark-mode .contact h2 {
+  color: #a085d4;
+}
+body.dark-mode .btn {
+  background: #764ba2;
+  color: white;
+}
+body.dark-mode .btn:hover {
+  background: #5a3e94;
+  color: white;
+}
+body.dark-mode .skill {
+  background: #5a3e94;
+}
+body.dark-mode .testimonial {
+  color: #ccc;
+}
+body.dark-mode .socials a {
+  color: #a085d4;
+}
+body.dark-mode .socials a:hover {
+  color: #d3c6f9;
+}
+
+.graph-demo {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .graph-demo .bar {
+      width: 40px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      border-radius: 5px 5px 0 0;
+      cursor: default;
+      position: relative;
+    }
+
+    .graph-demo .bar[title="Training Set"] {
+      background: linear-gradient(180deg, #4a90e2, #357ABD);
+    }
+
+    .graph-demo .bar[title="Testing Set"] {
+      background: linear-gradient(180deg, #50c878, #228B22);
+    }

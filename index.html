@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Portfolio | Tanvi Nagar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    /* Add the graph-demo CSS here so it works without separate file */
+    
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="images.jpg" alt="Profile" class="profile-pic" />
+    <h1>TANVI NAGAR</h1>
+    <p>Frontend Developer || Python || Learning Data Science</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <button id="darkModeToggle" class="btn mode-toggle">Dark Mode</button>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Tanvi, a passionate frontend developer learning Python & Data Science. I love building clean, user-friendly websites and solving complex problems.</p>
+    <h3>Skills</h3>
+    <div class="skills">
+      <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+      <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="skill"><i class="fab fa-python"></i> Python</div>
+      <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+      <div class="skill"><i class="fab fa-react"></i> React (Learning)</div>
+    </div>
+    <h3>Fun Fact</h3>
+    <p>I once coded an entire website while eating samosas! 🥟😆</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <h3>Portfolio Site</h3>
+        <p>Personal portfolio using HTML & CSS. Clean, responsive & aesthetic!</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Landing Page</h3>
+        <p>Modern startup landing page with smooth UI/UX and animations.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧮</div>
+        <h3>Calculator</h3>
+        <p>Fully functional calculator using Python (CLI version).</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <!-- Data Science Project Card -->
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Telecom Customer Churn Prediction</h3>
+        <p>
+          Predicted customer churn for a telecom company using data science techniques. Data split into training & testing sets, correlation analyzed, and results visualized.
+        </p>
+        <div class="graph-demo" aria-label="Training and Testing Set Sizes">
+          <div class="bar" style="height: 80px;" title="Training Set"></div>
+          <div class="bar" style="height: 50px;" title="Testing Set"></div>
+        </div>
+        <p><small><em>Blue bar = Training set size, Green bar = Testing set size</em></small></p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+      <p>“Tanvi's work ethic and dedication are truly impressive. Loved working with her!”</p>
+      <strong>- Rajesh Kumar</strong>
+    </div>
+    <div class="testimonial">
+      <p>“Creative and talented frontend developer. Highly recommend!”</p>
+      <strong>- Priya Sharma</strong>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="socials">
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="#" class="btn resume-btn" download="TanviNagar_Resume.pdf">Download Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tanvi Nagar</p>
+  </footer>
+
+  <a href="https://www.youtube.com" target="_blank" class="rickroll">Don't Click Me 😈</a>
+</body>
+</html>
+
